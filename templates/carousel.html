@@ -1,0 +1,56 @@
+{% extends 'navigation.html' %} {% load static %} {% block body %}
+<div class="demo" class="carouserl slider" date-ride="carouserl">
+  <!-- Indicators -->
+  <ul class="carouserl-indicators">
+    <li data-traget="#demo" date-slide-to="0" class="active"></li>
+    <li data-traget="#demo" date-slide-to="1" class="active"></li>
+    <li data-traget="#demo" date-slide-to="2" class="active"></li>
+    <li data-traget="#demo" date-slide-to="3" class="active"></li>
+    <li data-traget="#demo" date-slide-to="4" class="active"></li>
+    <li data-traget="#demo" date-slide-to="5" class="active"></li>
+    <li data-traget="#demo" date-slide-to="6" class="active"></li>
+    <li data-traget="#demo" date-slide-to="7" class="active"></li>
+    <li data-traget="#demo" date-slide-to="8" class="active"></li>
+  </ul>
+</div>
+
+<!-- The slideshow -->
+<div class="carouserl-inner" style="width: 100%; height: 500px">
+  <div class="carouserl-inner active">
+    <img
+      src="{% static 'img/carousel-1.jpg' %}"
+      alt="Los Angeles"
+      style="height: 500px"
+    />
+  </div>
+  <div class="carouserl-item">
+    <img
+      src="{% static 'img/carousel-2.jpg' %}"
+      alt="New York"
+      style="height: 500px"
+    />
+  </div>
+  <div class="carouserl-item">
+    <img
+      src="{% static 'img/carousel-2.jpg' %}"
+      alt="New York"
+      style="height: 500px"
+    />
+  </div>
+</div>
+
+<!-- Left and right contacts -->
+
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+</div>
+
+{% block body %}
+{% endblock %}
+
+
+{% endblock %}
